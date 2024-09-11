@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -14,9 +15,9 @@
         <h1 class="title">My Portfolio</h1>
         <nav id="nav_bar">
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="about active" href="#about">About Me</a></li>
+                <li><a class="projects" href="#projects">Projects</a></li>
+                <li><a  class="contact" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +26,12 @@
             <div class="text">
                 <h1>Hi,</h1>
                 <h1>I am Ahmed Bilal</h1>
-                <p>A passionate web developer with a strong focus on frontend technologies like <code>HTML</code>,<code>CSS</code>, and <code>JavaScript</code>. I recently graduated with a degree in Computer Science and have been honing my skills by working on various web development projects. I enjoy creating visually appealing, user-friendly websites and am always eager to learn and experiment with new tools and frameworks. Currently, I'm looking for opportunities to grow as a developer and contribute to innovative projects in the tech industry.
+                <p>A passionate web developer with a strong focus on frontend technologies like
+                    <code>HTML</code>,<code>CSS</code>, and <code>JavaScript</code>. I recently graduated with a degree
+                    in Computer Science and have been honing my skills by working on various web development projects. I
+                    enjoy creating visually appealing, user-friendly websites and am always eager to learn and
+                    experiment with new tools and frameworks. Currently, I'm looking for opportunities to grow as a
+                    developer and contribute to innovative projects in the tech industry.
                 </p>
                 <br>
                 <div class="skills">
@@ -93,13 +99,13 @@
         </scetion>
 
         <section id="contact">
-
+            <h1 class="contact_title">Contact Me</h1>
             <div>
-                <form action="https:/google.com" method="post">
-                    <label for="user-name">Name: <input type="text" name="user-name" required></label>
-                    <label for="user-name">Email: <input type="email" name="user-email" required></label>
+                <form action="index.html" method="post" onsubmit="return validateForm()">
+                    <label for="user-name">Name: <input type="text" name="name" id="name" required></label>
+                    <label for="user-name">Email: <input type="email" name="email" id="email" required></label>
                     <label for="user-name">Message:
-                        <textarea name="message" id="" cols="30" rows="5" required></textarea>
+                        <textarea name="message" id="message" cols="30" rows="5" required></textarea>
                     </label>
                     <input type="submit" id="button" value="Send">
                 </form>
@@ -112,7 +118,7 @@
         <p>&copy; Copy Right 2024</p>
         <a href="">ahmed258bilal@gmail.com</a>
     </footer>
-
+    <script src="app.js"></script>
 </body>
 
 </html>
