@@ -47,11 +47,14 @@ header {
 
 #nav_bar ul li a:hover {
     text-decoration: underline;
-    color: wheat;
+    
 }
-.active{
-    background-color: brown;
+nav a.active {
+    background-color: tomato; /* Or any other style for active links */
     color: white;
+}
+#respond{
+    display: none;
 }
 
 /* About section */
@@ -103,7 +106,7 @@ h1 {
 }
 
 .image figure img{
-    width: 350px;
+    width: 340px;
     height: 400px;
     margin-top: 110px;
     padding-bottom: 15px;

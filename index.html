@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap"
         rel="stylesheet">
+        <script src="app.js"></script>
 </head>
 
 <body>
     <header>
         <h1 class="title">My Portfolio</h1>
-        <nav id="nav_bar">
+        <nav id="nav_bar" class="nav_bar">
             <ul>
-                <li><a class="about active" href="#about">About Me</a></li>
-                <li><a class="projects" href="#projects">Projects</a></li>
-                <li><a  class="contact" href="#contact">Contact</a></li>
+                <li><a class="menu" href="#about">About Me</a></li>
+                <li><a class="menu" href="#projects">Projects</a></li>
+                <li><a  class="menu" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -101,7 +102,7 @@
         <section id="contact">
             <h1 class="contact_title">Contact Me</h1>
             <div>
-                <form action="index.html" method="post" onsubmit="return validateForm()">
+                <form action="index.html" method="get"  onsubmit="return validateForm()">
                     <label for="user-name">Name: <input type="text" name="name" id="name" required></label>
                     <label for="user-name">Email: <input type="email" name="email" id="email" required></label>
                     <label for="user-name">Message:
@@ -118,7 +119,7 @@
         <p>&copy; Copy Right 2024</p>
         <a href="">ahmed258bilal@gmail.com</a>
     </footer>
-    <script src="app.js"></script>
+  
 </body>
 
 </html>
